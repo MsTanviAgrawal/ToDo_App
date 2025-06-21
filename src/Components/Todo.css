@@ -1,0 +1,150 @@
+/* Todo container */
+.todo-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 25px;
+  background: rgba(255, 255, 255, 0.8); /* light glass effect */
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  color: #000;
+  text-align: center;
+}
+
+.todo-form h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Input section */
+.todo-input-section {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.todo-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-color: #8ec5fc;
+  background-color: #fff;
+}
+
+/* Add Button */
+.todo-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #8ec5fc, #e0c3fc);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+}
+
+.todo-button:hover {
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+  transform: scale(1.05);
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+/* Edit Input */
+.inline-input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  margin-right: 10px;
+}
+
+.inline-input:focus {
+  border-color: #8ec5fc;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-item button {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Buttons */
+.edit-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.edit-btn:hover {
+  background-color: #ffca2c;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #ff4d4f;
+  transform: scale(1.05);
+}
+
+.save-btn {
+  background-color: #66a6ff;
+  color: #000;
+}
+
+.save-btn:hover {
+  background-color: #89f7fe;
+  transform: scale(1.05);
+}
